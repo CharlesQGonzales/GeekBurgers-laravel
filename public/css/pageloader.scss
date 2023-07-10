@@ -1,0 +1,57 @@
+* {
+  background-color: rgb(255, 242, 244);
+}
+
+.pageloader {
+  margin-top: 15%;
+}
+
+#myProgress {
+  width: 100%;
+  max-width: 200px;
+  background: #F4F4F4;
+  box-shadow: inset -1px 1px 2px rgba(164, 164, 164, 0.2), inset 1px -1px 2px rgba(164, 164, 164, 0.2), inset -1px -1px 2px rgba(231, 231, 231, 0.9), inset 1px 1px 3px rgba(231, 231, 231, 0.9);
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+#myBar {
+  width: 10%;
+  height: 15px;
+  background: rgba(255, 193, 8, 0.35);
+  border-radius: 28px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: 0.5s;
+  animation: loading82341 5s ease infinite;
+}
+
+@keyframes loading82341 {
+  0% {
+    width: 0%;
+  }
+
+  10% {
+    width: 10%;
+  }
+
+  50% {
+    width: 40%;
+  }
+
+  60% {
+    width: 60%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pageloader img {
+    width: 33%;
+    margin-top: 40%;
+  }
+}

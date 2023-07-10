@@ -1,0 +1,70 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    overflow-y: auto;
+}
+.sidebar .sidebar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .sidebar-header .admin-photo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.sidebar .sidebar-header .admin-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sidebar .sidebar-header .admin-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar .sidebar-menu {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.sidebar .sidebar-menu li a {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar .sidebar-menu li a:hover {
+    background-color: #e9ecef;
+}
+
+.sidebar .sidebar-menu li a.active {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.sidebar .signout-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.sidebar .signout-link a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar .signout-link a:hover {
+    text-decoration: underline;
+}
